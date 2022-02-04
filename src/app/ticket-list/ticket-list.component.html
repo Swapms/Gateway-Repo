@@ -1,0 +1,35 @@
+<div class="col-md-6 user-container">
+    <h2 style="margin: auto"> Ticket Details</h2>
+    <button class="btn btn-danger" style="width:100px" (click)="addTicket()"> Add Ticket</button>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>PhoneNo</th>
+        <th>Address</th>
+        <th>Pin</th>
+        <th>Source</th>
+        <th>Destination</th>
+        <th>Date</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let ticket of tickets">
+        <td class="hidden">{{ticket.id}}</td>
+        <td>{{ticket.firstName}}</td>
+        <td>{{ticket.lastName}}</td>
+        <td>{{ticket.phoneNo}}</td>
+        <td>{{ticket.address}}</td>
+        <td>{{ticket.pin}}</td>
+        <td>{{ticket.source}}</td>
+        <td>{{ticket.destination}}</td>
+        <td>{{ticket.date}}</td>
+        <td><button class="btn btn-success" (click)="deleteTicket(ticket)"> Delete</button></td>
+        <td> <button class="btn btn-success" (click)="editTicket(ticket)" style="margin-left: 20px;"> Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  

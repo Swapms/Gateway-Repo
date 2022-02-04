@@ -1,0 +1,48 @@
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+      </div>
+  
+      <label for="address">address:</label>
+      <input type="text" formControlName="address" placeholder="address" name="address" class="form-control" id="address">
+    </div>
+
+    <div class="form-group">
+      <label for="emailId">EmailId</label>
+      <input type="text" formControlName="emailId" placeholder="emailId" name="emailId" class="form-control" id="emailId">
+    </div>
+    <div class="form-group">
+      <label for="PhoneNo">Phone Number : </label>
+      <input type="text" formControlName="phoneNo" placeholder="PhoneNo" name="phoneNo" class="form-control" id="phoneNo">
+    </div>
+    <div class="form-group">
+      <label for="pin">Pin</label>
+      <input type="number" formControlName="pin" placeholder="pin" name="pin" class="form-control" id="pin">
+    </div>
+      <div class="form-group">
+        <label for="source">source:</label>
+        <input type="text" formControlName="source" placeholder="source" name="source" class="form-control" id="source">
+      </div>
+  
+      <div class="form-group">
+        <label for="destination">destination:</label>
+        <input type="text" formControlName="destination" placeholder="destination" name="destination" class="form-control" id="destination">
+      </div>
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="text" formControlName="date" placeholder="date" name="date" class="form-control" id="date">
+      </div>
+  
+      <button class="btn btn-success">Add</button>
+    </form>
+  </div>
+  
